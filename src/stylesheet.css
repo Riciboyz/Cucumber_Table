@@ -1,94 +1,95 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #fff;
-  }
-  
-  /* Center the table on the page */
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 20px;
-  }
-  
-  /* Styling for the table */
-  .shine-table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 600px;
-    background: #222;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    animation: tableFadeIn 1s ease-out forwards;
-  }
-  
-  /* Header styling */
-  .shine-table thead {
-    background-color: #333;
-  }
-  
-  .shine-table th,
-  .shine-table td {
-    padding: 15px;
-    border: 1px solid #444;
-    text-align: left;
-  }
-  
-  /* Hover effect for rows */
-  .shine-table tbody tr:hover {
-    background-color: #333;
-  }
-  
-  /* Fade in animation for the table */
-  @keyframes tableFadeIn {
-    from {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Center the tables on the page, stacked vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 20px;
+  gap: 20px; /* Adds spacing between tables */
+}
+
+/* Styling for the table */
+.shine-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: tableFadeIn 1s ease-out forwards;
+}
+
+/* Header styling */
+.shine-table thead {
+  background-color: #333;
+}
+
+.shine-table th,
+.shine-table td {
+  padding: 15px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+/* Hover effect for rows */
+.shine-table tbody tr:hover {
+  background-color: #333;
+}
+
+/* Fade in animation for the table */
+@keyframes tableFadeIn {
+  from {
       opacity: 0;
       transform: scale(0.95);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: scale(1);
-    }
   }
-  
-  /* Fade in animation for each row */
-  .fade-in-row {
-    opacity: 0;
-    animation: rowFadeIn 0.5s forwards;
-  }
-  
-  @keyframes rowFadeIn {
-    to {
+}
+
+/* Fade in animation for each row */
+.fade-in-row {
+  opacity: 0;
+  animation: rowFadeIn 0.5s forwards;
+}
+
+@keyframes rowFadeIn {
+  to {
       opacity: 1;
-    }
   }
-  
-  /* Shine effect overlay */
-  .shine-table::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transform: skewX(-25deg);
-    animation: shine 2s infinite;
-  }
-  
-  @keyframes shine {
-    0% {
+}
+
+/* Shine effect overlay */
+.shine-table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(-25deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
       left: -150%;
-    }
-    100% {
-      left: 150%;
-    }
   }
-  
+  100% {
+      left: 150%;
+  }
+}
