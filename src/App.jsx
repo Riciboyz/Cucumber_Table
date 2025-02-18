@@ -19,8 +19,8 @@ const answersData = [
   { question: 'Kas un kāpēc ir funkcionālā iezīme?', answer: 'Sistēmas funkcionalitāte, kas atbalsta spēju (Capability) un specifikē uzvedību.' },
   { question: 'Kādā formātā veidot lietotājstāstus?', answer: 'As a [lietotāja loma], I want [sistēmas darbība], So that [mērķis].' },
   { question: 'Kā veidot scenārijus?', answer: 'Given [nosacījums], When [darbība], Then [rezultāts].' },
-  { question: 'Kā Rubika kubs ļauj skatīties uz funkcionālajām iezīmēm?', answer: 'Metafora palīdz aplūkot funkcionalitāti no dažādiem leņķiem un identificēt dažādus scenārijus.' },
-  { question: 'Kas ir veiksmīgā iznākuma scenārijs?', answer: 'Scenārijs, kurā lietotājs sasniedz mērķi bez šķēršķiem.' },
+  { question: 'Kā Rubika kubs ļauj skatīties uz funkcionālajām iezīmēm?', answer: 'Palīdz aplūkot funkcionalitāti no dažādiem leņķiem un identificēt dažādus scenārijus.' },
+  { question: 'Kas ir veiksmīgā iznākuma scenārijs?', answer: 'Scenārijs, kurā lietotājs sasniedz mērķi bez šķēršļiem.' },
 ];
 
 export default function App() {
